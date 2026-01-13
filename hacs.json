@@ -1,5 +1,5 @@
 {
     "hacs": "1.6.0",
-    "name": "Frigate",
+    "name": "Frigate HASS Lite",
     "homeassistant": "2025.4.1"
 }
