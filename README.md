@@ -1,37 +1,30 @@
 <!-- markdownlint-disable first-line-heading -->
 <!-- markdownlint-disable no-inline-html -->
 
-<img src="https://raw.githubusercontent.com/blakeblackshear/frigate-hass-integration/master/images/frigate.png"
-     alt="Frigate icon"
-     width="35%"
-     align="right"
-     style="float: right; margin: 10px 0px 20px 20px;" />
+This is a fork of the [Offical Repo](https://github.com/blakeblackshear/frigate-hass-integration) with some features that I'm choosing to keep around for my own needs. 
 
-[![GitHub Release](https://img.shields.io/github/release/blakeblackshear/frigate-hass-integration.svg?style=flat-square)](https://github.com/blakeblackshear/frigate-hass-integration/releases)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/blakeblackshear/frigate-hass-integration/build.yaml?branch=master&style=flat-square)](https://github.com/blakeblackshear/frigate-hass-integration/actions/workflows/build.yaml)
-[![Test Coverage](https://img.shields.io/codecov/c/gh/blakeblackshear/frigate-hass-integration?style=flat-square)](https://app.codecov.io/gh/blakeblackshear/frigate-hass-integration/)
-[![License](https://img.shields.io/github/license/blakeblackshear/frigate-hass-integration.svg?style=flat-square)](LICENSE)
-[![hacs](https://img.shields.io/badge/HACS-default-orange.svg?style=flat-square)](https://hacs.xyz)
-
-# Frigate Home Assistant Integration
+# Frigate Home Assistant Integration Lite
 
 Provides the following:
 
 - Rich media browser with thumbnails and navigation
 - Sensor entities (Camera FPS, Detection FPS, Process FPS, Skipped FPS, Objects detected)
-- Binary Sensor entities (Object motion)
-- Camera entities (Live view, Object detected snapshot)
 - Switch entities (Recording, Detection, Snapshots, Improve Contrast)
 - Services to control camera (manual events, PTZ control)
 - Support for multiple Frigate instances.
+
+It provides an option to disable the richness of sensor entities that are provided by default in the official repo, to reduce overhead and optimize the experience if you aren't using all those features, including:
+
+- Binary Sensor entities (Object motion)
+- Camera entities (Live view, Object detected snapshot)
 
 ## Installation
 
 Easiest install is via [HACS](https://hacs.xyz/):
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=blakeblackshear&repository=frigate-hass-integration&category=integration)
+On the HACS tab, select Custom Repoistories and then paste this repo: `https://github.com/rgregg/frigate-hass-integration-lite`.
 
-`HACS -> Integrations -> Explore & Add Repositories -> Frigate`
+`HACS -> Integrations -> Explore & Add Repositories -> Frigate HASS Lite`
 
 Notes:
 
@@ -58,9 +51,3 @@ There is also a [companion Lovelace card](https://github.com/dermotduffy/frigate
 ## Documentation
 
 For full usage instructions, please see the [central Frigate documentation](https://docs.frigate.video/integrations/home-assistant/).
-
-## Maintainers
-
-- [Blake Blackshear](https://github.com/blakeblackshear/)
-- [Dermot Duffy](https://github.com/dermotduffy/)
-- [Nick Mowan](https://github.com/NickM-27)
